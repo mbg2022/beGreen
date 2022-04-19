@@ -62,6 +62,7 @@ section {
     flex-wrap: wrap;
     text-align: center;
     background-blend-mode: hard-light;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
     width: 50%;
 }
 
@@ -251,6 +252,7 @@ p {
 .footerGral {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    background-image: linear-gradient(to right, #007991 0%, #78ffd6 51%, #007991 100%);
     grid-area: footerGral;
     justify-items: center;
 }
@@ -274,6 +276,7 @@ nav {
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
+    background-image: linear-gradient(to right, #007991 0%, #78ffd6 51%, #007991 100%);
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
@@ -299,6 +302,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
     flex-wrap: wrap;
     text-align: center;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
     background-blend-mode: hard-light;
     width: auto;
 }
