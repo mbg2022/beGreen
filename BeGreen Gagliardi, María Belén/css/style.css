@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../images/panel7.jpg);
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    /*background-color: pink;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    /*background-color: pink;*/
+}
+
+section,
+nav,
+aside,
+header {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.mainFormContacto {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: 10px 10px 40px -14px #0e805d;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center
+}
+
+section {
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+    text-align: center;
+    background-blend-mode: hard-light;
+    width: 50%;
+}
+
+aside {
+    box-sizing: initial;
+    overflow: visible;
+    align-content: center;
+    opacity: 0.9;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+header {
+    border-radius: 10%;
+}
+
+.form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(5vh - 22px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #78788c;
+    border-bottom: 2px solid #78788c
+}
+
+.h2Nosotros {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff
+}
+
+.divForm {
+    content: 'Hi';
+    position: absolute;
+    background: #50505a;
+    color: #fff;
+    width: 20px;
+    padding: 4px 1px 4px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000
+}
+
+span {
+    margin: 0 5px 0 15px
+}
+
+p {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+}
+
+.mainProyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #e6e6e6;
+}
+
+.mainProyectos img {
+    width: 250px;
+    height: 150px;
+    opacity: 0.5;
+    border: 2px double navajowhite;
+    margin: 30px;
+}
+
+.mainProyectos img:hover {
+    opacity: 1;
+    border: 3px double palevioletred;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: grey;
+    border-bottom: 3px solid #78ffd6;
+    padding-bottom: 10px;
+}
+
+
+/*1 Grid aplicado a las Páginas en Gral*/
+
+.contenedorGridGral {
+    width: 98%;
+    height: 80vh;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    grid-template-areas: "headerContenedorGridGral headerContenedorGridGral headerContenedorGridGral" "encabezadoGral encabezadoGral encabezadoGral" "prodGral prodGral asideGral" "extrasGral extrasGral extrasGral" "footerGral footerGral footerGral";
+    justify-self: center;
+    align-self: center;
+}
+
+.headerContenedorGridGral {
+    grid-area: headerContenedorGridGral;
+    border-radius: 0.9%;
+    justify-items: center;
+}
+
+.encabezadoGral {
+    background-color: #78ffd6;
+    grid-area: encabezadoGral;
+    justify-items: center;
+    border-radius: 1.5%;
+}
+
+.prodGral {
+    background-color: white;
+    grid-area: prodGral;
+    justify-items: center;
+}
+
+.asideGral {
+    grid-area: asideGral;
+    justify-items: center;
+}
+
+.extrasGral {
+    background-color: #78ffd6;
+    grid-area: extrasGral;
+    justify-items: center;
+}
+
+.footerGral {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    grid-area: footerGral;
+    justify-items: center;
+}
+
+
+/* Fin de 1 Grid aplicado a las Páginas en Gral*/
+
+
+/* 2 Barra de Navegación*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-enlace {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-enlace:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Fin 2 Barra de Navegación*/
+
+
+/*3 acá estamos*/
+
+.prodGralSection {
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+    text-align: center;
+    background-blend-mode: hard-light;
+    width: auto;
+}
+
+
+/*Contenedor contacto*/
+
+
+/*Grid aplicado a la página Contacto*/
+
+.contenedorGridContacto {
+    width: 98%;
+    height: 80vh;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    grid-template-areas: "headerContenedorGridContacto headerContenedorGridContacto " "encabezadoContacto  encabezadoContacto" "prodContacto  prodContacto" "extrasContacto extrasContacto" " footerContacto footerContacto";
+    justify-self: center;
+    align-self: center;
+}
+
+.headerContenedorGridContacto {
+    grid-area: headerContenedorGridContacto;
+    border-radius: 0.9%;
+    justify-items: center;
+}
+
+.encabezadoContacto {
+    background-color: #78ffd6;
+    grid-area: encabezadoContacto;
+    justify-items: center;
+    border-radius: 1.5%;
+}
+
+.prodContacto {
+    background-color: white;
+    grid-area: prodContacto;
+    justify-items: center;
+}
+
+.asideContacto {
+    grid-area: asideContacto;
+    justify-items: center;
+}
+
+.extrasContacto {
+    background-color: #78ffd6;
+    grid-area: extrasContacto;
+    justify-items: center;
+}
+
+.footerContacto {
+    background-image: linear-gradient(to right, #007991 0%, #78ffd6 51%, #007991 100%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    grid-area: footerContacto;
+    justify-items: center;
+}
+
+
+/*Fin 3 acá estamos*/
+
+
+/*4 Servicios*/
+
+.contenedorGridServicios {
+    background-color: white;
+    width: 98%;
+    height: 80vh;
+    border: solid white 1px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+    grid-template-areas: "headerContenedorGridServicios headerContenedorGridServicios headerContenedorGridServicios" "prod prod aside" "extras extras extras" "footer footer footer";
+    justify-self: center;
+    align-self: center;
+}
+
+.headerContenedorGridServicios {
+    background-color: whitesmoke;
+    grid-area: headerContenedorGridServicios;
+    border-radius: 0.9%;
+    justify-items: center;
+}
+
+.prod {
+    grid-area: prod;
+    justify-items: center;
+}
+
+.aside {
+    grid-area: aside;
+    justify-items: center;
+}
+
+.extras {
+    background-color: whitesmoke;
+    grid-area: extras;
+    justify-items: center;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, #007991 0%, #78ffd6 51%, #007991 100%);
+    grid-area: footer;
+    justify-items: center;
+}
+
+.subtitulo {
+    text-align: center;
+    color: grey;
+    border-bottom: 3px solid #78ffd6;
+    padding-bottom: 10px;
+}
+
+
+/*Media Querries*/
+
+@media only screen and (max-width:500px) {
+    .contenedorGridGral {
+        width: 95%;
+        height: 80vh;
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridGral" "encabezadoGral" "asideGral" "prodGral" "extrasGral" "extrasGral" "extrasGral" "footerGral";
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+    }
+    .h2Nosotros {
+        font-size: medium;
+    }
+    .subtitulo {
+        font-size: medium;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        font-size: medium;
+    }
+    h2 {
+        font-size: medium;
+        text-align: left;
+    }
+    h3 {
+        font-size: medium;
+    }
+    .mainFormContacto {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        box-shadow: 10px 10px 40px -14px #0e805d;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center
+    }
+    .prodGralSection {
+        font-family: 'Open Sans', sans-serif;
+        flex-wrap: wrap;
+        text-align: center;
+        background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+        background-blend-mode: hard-light;
+        align-content: center;
+    }
+    p.subtitulo {
+        text-align: center;
+        text-size-adjust: 100%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    /*Contacto*/
+    .contenedorGridContacto {
+        width: 95%;
+        height: 80vh;
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridContacto" "encabezadoContacto" "prodContacto" "asideContacto" "extrasContacto" "extrasContacto" "footerContacto";
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    .contenedorGridGral {
+        width: 98%;
+        height: 80vh;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridGral headerContenedorGridGral" "encabezadoGral encabezadoGral" "asideGral asideGral" "prodGral prodGral" "extrasGral extrasGral" "footerGral footerGral";
+        justify-self: center;
+        align-self: center;
+    }
+    .contenedorGridContacto {
+        width: 98%;
+        height: 80vh;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridContacto headerContenedorGridContacto" "encabezadoContacto encabezadoContacto" "asideContacto asideContacto" "prodContacto prodContacto" "extrasContacto extrasContacto" "footerContacto footerContacto";
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width:1000) {
+    .contenedorGridGral {
+        width: 50%;
+        height: 80vh;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridGral headerContenedorGridGral headerContenedorGridGral" "encabezadoGral encabezadoGral encabezadoGral" "prodGral prodGral asideGral" "extrasGral extrasGral extrasGral" "footerGral footerGral footerGral";
+        justify-self: center;
+        align-self: center;
+    }
+    .contenedorGridContacto {
+        width: 50%;
+        height: 80vh;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 12px;
+        grid-template-areas: "headerContenedorGridContacto headerContenedorGridContacto headerContenedorGridContacto" "encabezadoContacto encabezadoContacto encabezadoContacto" "prodContacto prodContactol asideContacto" "extrasContacto extrasContacto extrasContacto" "footerContacto footerContacto footerContacto";
+        justify-self: center;
+        align-self: center;
+    }
+}
